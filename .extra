@@ -44,3 +44,7 @@ function reload_extra() {
 	cp ~/Projects/OpenSource/extras/.extra ~/
 	reload
 }
+
+function login() {
+	ssh bvoss@d1-dev-bvoss.riskio.us
+}

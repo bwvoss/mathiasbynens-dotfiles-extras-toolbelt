@@ -55,3 +55,6 @@ add_to_vimrc "nnoremap K :!ack \"<C-R><C-W>\"<Enter>"
 #Normalize tabs
 add_to_vimrc "set shiftwidth=2"
 add_to_vimrc "set tabstop=2"
+
+# Make sure solarized is set to the right termcolors
+add_to_vimrc "let g:solarized_termcolors:256"
