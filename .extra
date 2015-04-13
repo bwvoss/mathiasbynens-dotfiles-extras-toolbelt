@@ -48,3 +48,11 @@ function reload_extra() {
 function login() {
 	ssh bvoss@d1-dev-bvoss.riskio.us
 }
+
+#########################
+#ALIASES
+#########################
+
+#Budler shortcuts
+alias b="bundle"
+alias be="bundle exec"
