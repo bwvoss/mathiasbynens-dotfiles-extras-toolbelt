@@ -21,6 +21,7 @@ install_pathogen
 #Install vim packages
 add_vim_package "https://github.com/kchmck/vim-coffee-script.git" "vim-coffee-script"
 add_vim_package "https://github.com/scrooloose/nerdtree.git" "nerdtree"
+add_vim_package "https://github.com/tpope/vim-fugitive" "vim-fugitive"
 
 #Add pathogen to .vimrc
 add_to_vimrc "execute pathogen#infect()"
@@ -50,3 +51,7 @@ add_to_vimrc "map <leader>s :s/<C-R>//"
 
 #Ack the current word
 add_to_vimrc "nnoremap K :!ack \"<C-R><C-W>\"<Enter>"
+
+#Normalize tabs
+add_to_vimrc "set shiftwidth=2"
+add_to_vimrc "set tabstop=2"
