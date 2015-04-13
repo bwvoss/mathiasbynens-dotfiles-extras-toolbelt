@@ -44,3 +44,9 @@ add_to_vimrc "nnoremap <C-k> :m .-2<CR>=="
 add_to_vimrc "vnoremap <C-j> :m '>+1<CR>gv=gv"
 add_to_vimrc "vnoremap <C-k> :m '<-2<CR>gv=gv"
 
+#Search and replace with the current word
+add_to_vimrc "vmap <leader>s :s/<C-R>//"
+add_to_vimrc "map <leader>s :s/<C-R>//"
+
+#Ack the current word
+add_to_vimrc "nnoremap K :!ack \"<C-R><C-W>\"<Enter>"
