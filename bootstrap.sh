@@ -16,6 +16,12 @@ function install_pathogen() {
 	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 }
 
+function compile_command_t() {
+	cd ~/.vim/bundle/command-t/ruby/command-t
+	ruby extconf.rb
+	make
+}
+
 install_pathogen
 
 #Install vim packages
@@ -23,6 +29,8 @@ add_vim_package "https://github.com/kchmck/vim-coffee-script.git" "vim-coffee-sc
 add_vim_package "https://github.com/scrooloose/nerdtree.git" "nerdtree"
 add_vim_package "https://github.com/tpope/vim-fugitive" "vim-fugitive"
 add_vim_package "https://github.com/ntpeters/vim-better-whitespace" "vim-better-whitespace"
+add_vim_package "https://github.com/wincent/Command-T" "command-t"
+compile_command_t
 
 #Add pathogen to .vimrc
 add_to_vimrc "execute pathogen#infect()"
