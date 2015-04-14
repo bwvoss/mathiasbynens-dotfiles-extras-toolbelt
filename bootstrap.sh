@@ -22,6 +22,7 @@ install_pathogen
 add_vim_package "https://github.com/kchmck/vim-coffee-script.git" "vim-coffee-script"
 add_vim_package "https://github.com/scrooloose/nerdtree.git" "nerdtree"
 add_vim_package "https://github.com/tpope/vim-fugitive" "vim-fugitive"
+add_vim_package "https://github.com/ntpeters/vim-better-whitespace" "vim-better-whitespace"
 
 #Add pathogen to .vimrc
 add_to_vimrc "execute pathogen#infect()"
@@ -57,4 +58,7 @@ add_to_vimrc "set shiftwidth=2"
 add_to_vimrc "set tabstop=2"
 
 # Make sure solarized is set to the right termcolors
-add_to_vimrc "let g:solarized_termcolors:256"
+add_to_vimrc "let g:solarized_termcolors=256"
+
+# Use the better whitespace's plugin to strip whitespace
+add_to_vimrc "noremap <leader>ss :StripWhitespace<CR>"
