@@ -65,3 +65,6 @@ add_to_vimrc "let g:solarized_termcolors=256"
 
 # Use the better whitespace's plugin to strip whitespace
 add_to_vimrc "noremap <leader>ss :StripWhitespace<CR>"
+
+#Map control p to command t
+add_to_vimrc "map <leader>t :CtrlP<CR>"
