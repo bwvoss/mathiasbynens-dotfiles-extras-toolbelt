@@ -55,3 +55,5 @@ alias be="bundle exec"
 
 #Login to dev instance
 alias dev="ssh -A bvoss@d1-dev-bvoss"
+#Login to prod instance
+alias prod="ssh -A bvoss@d1-site-utility-worker"
