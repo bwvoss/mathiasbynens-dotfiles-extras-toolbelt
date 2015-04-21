@@ -71,3 +71,6 @@ add_to_vimrc "map <leader>t :CtrlP<CR>"
 #Wrap and unwrap shortcuts
 add_to_vimrc "noremap <leader>sw :set wrap<CR>"
 add_to_vimrc "noremap <leader>nw :set nowrap<CR>"
+
+#Insert pry
+add_to_vimrc "map <leader>ip orequire 'pry';binding.pry<CR>"
