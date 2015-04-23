@@ -39,7 +39,7 @@ add_to_vimrc "noremap <leader>q :q<CR>"
 add_to_vimrc "noremap <leader><Space> :noh<CR>"
 
 #leader n for NERDTree toggling
-add_to_vimrc "noremap <leader>n :NERDTreeToggle<CR>"
+add_to_vimrc "noremap <leader>nt :NERDTreeToggle<CR>"
 
 #Move lines up and down a row with leader j/k
 add_to_vimrc "nnoremap <C-j> :m .+1<CR>=="
