@@ -25,6 +25,7 @@ add_vim_package "https://github.com/tpope/vim-fugitive" "vim-fugitive"
 add_vim_package "https://github.com/ntpeters/vim-better-whitespace" "vim-better-whitespace"
 add_vim_package "https://github.com/kien/ctrlp.vim" "ctrlp"
 add_vim_package "https://github.com/zhaocai/GoldenView.Vim" "GoldenView"
+add_vim_package "https://github.com/scrooloose/nerdcommenter" "nerdcommenter"
 
 #Add pathogen to .vimrc
 add_to_vimrc "execute pathogen#infect()"
