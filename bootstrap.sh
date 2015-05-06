@@ -75,3 +75,6 @@ add_to_vimrc "noremap <leader>nw :set nowrap<CR>"
 
 #Insert pry
 add_to_vimrc "map <leader>ip orequire 'pry';binding.pry<CR>"
+
+#Stop NERDTree from opening by default on: vim .
+add_to_vimrc "let g:NERDTreeHijackNetrw=0"
