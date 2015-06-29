@@ -26,6 +26,7 @@ add_vim_package "https://github.com/ntpeters/vim-better-whitespace" "vim-better-
 add_vim_package "https://github.com/kien/ctrlp.vim" "ctrlp"
 add_vim_package "https://github.com/zhaocai/GoldenView.Vim" "GoldenView"
 add_vim_package "https://github.com/scrooloose/nerdcommenter" "nerdcommenter"
+add_vim_package "https://github.com/godlygeek/tabular" "tabular"
 
 #Add pathogen to .vimrc
 add_to_vimrc "execute pathogen#infect()"
