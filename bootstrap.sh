@@ -3,17 +3,17 @@
 #########################
 
 function add_to_vimrc() {
-	echo "$1" >> ~/.vimrc
+  echo "$1" >> ~/.vimrc
 }
 
 function add_vim_package() {
-	git clone "$1" ~/.vim/bundle/"$2"
+  git clone "$1" ~/.vim/bundle/"$2"
 }
 
 function install_pathogen() {
-	rm -rf ~/.vim/autoload ~/.vim/bundle/ && \
-	mkdir -p ~/.vim/autoload ~/.vim/bundle/ && \
-	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+  rm -rf ~/.vim/autoload ~/.vim/bundle/ && \
+  mkdir -p ~/.vim/autoload ~/.vim/bundle/ && \
+  curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 }
 
 install_pathogen
@@ -79,3 +79,10 @@ add_to_vimrc "map <leader>ip orequire 'pry';binding.pry<CR>"
 
 #Stop NERDTree from opening by default on: vim .
 add_to_vimrc "let g:NERDTreeHijackNetrw=0"
+
+########################
+#TMUX
+########################
+git clone https://github.com/tony/tmux-config.git ~/.tmux
+ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
+
