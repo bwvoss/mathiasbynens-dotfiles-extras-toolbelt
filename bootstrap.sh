@@ -20,6 +20,7 @@ install_pathogen
 
 #Install vim packages
 add_vim_package "https://github.com/kchmck/vim-coffee-script.git" "vim-coffee-script"
+add_vim_package "https://github.com/rosstimson/bats.vim" "bats.vim"
 add_vim_package "https://github.com/scrooloose/nerdtree.git" "nerdtree"
 add_vim_package "https://github.com/tpope/vim-fugitive" "vim-fugitive"
 add_vim_package "https://github.com/ntpeters/vim-better-whitespace" "vim-better-whitespace"
@@ -83,6 +84,9 @@ add_to_vimrc "let g:NERDTreeHijackNetrw=0"
 ########################
 #TMUX
 ########################
-git clone https://github.com/tony/tmux-config.git ~/.tmux
-ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
+
+if [ ! -d "~/.tmux" ]; then
+  git clone https://github.com/tony/tmux-config.git ~/.tmux
+  ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
+fi
 
