@@ -25,6 +25,7 @@ add_vim_package "https://github.com/scrooloose/nerdtree.git" "nerdtree"
 add_vim_package "https://github.com/tpope/vim-fugitive" "vim-fugitive"
 add_vim_package "https://github.com/ntpeters/vim-better-whitespace" "vim-better-whitespace"
 add_vim_package "https://github.com/kien/ctrlp.vim" "ctrlp"
+add_vim_package "https://github.com/tpope/vim-fireplace" "vim-fireplace"
 add_vim_package "https://github.com/zhaocai/GoldenView.Vim" "GoldenView"
 add_vim_package "https://github.com/scrooloose/nerdcommenter" "nerdcommenter"
 add_vim_package "https://github.com/godlygeek/tabular" "tabular"
@@ -40,6 +41,9 @@ add_to_vimrc "noremap <leader>q :q<CR>"
 
 #Leader space shortcut for :noh
 add_to_vimrc "noremap <leader><Space> :noh<CR>"
+
+#leader r for rspec of the current file
+add_to_vimrc "noremap <leader>r :!bundle exec rspec %<CR>"
 
 #leader n for NERDTree toggling
 add_to_vimrc "noremap <leader>nt :NERDTreeToggle<CR>"

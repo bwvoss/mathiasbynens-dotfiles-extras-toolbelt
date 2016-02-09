@@ -40,16 +40,16 @@ function remote_branch_rename() {
 
 # clear the terminal
 function cl() {
-	clear
+  clear
 }
 
 function reload() {
-	source "~/.bash_profile"
+  source "~/.bash_profile"
 }
 
 function reload_extra() {
-	cp ~/Projects/OpenSource/extras/.extra ~/
-	reload
+  cp ~/Projects/OpenSource/extras/.extra ~/
+  reload
 }
 
 #########################
@@ -61,6 +61,6 @@ alias b="bundle"
 alias be="bundle exec"
 
 #Login to dev instance
-alias dev="ssh -A bvoss@d1-dev-bvoss"
+alias dev="ssh -A bvoss@dev-bvoss"
 #Login to prod instance
 alias prod="ssh -A bvoss@d1-site-utility-worker"
