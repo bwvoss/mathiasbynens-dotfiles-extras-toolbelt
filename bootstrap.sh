@@ -85,12 +85,3 @@ add_to_vimrc "map <leader>ip orequire 'pry';binding.pry<CR>"
 #Stop NERDTree from opening by default on: vim .
 add_to_vimrc "let g:NERDTreeHijackNetrw=0"
 
-########################
-#TMUX
-########################
-
-if [ ! -d "~/.tmux" ]; then
-  git clone https://github.com/tony/tmux-config.git ~/.tmux
-  ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
-fi
-
