@@ -1,3 +1,8 @@
+# defaults write NSGlobalDomain AppleLocale -string "en_US@currency=USD"
+# defaults write NSGlobalDomain AppleMeasurementUnits -string "Inches"
+# defaults write NSGlobalDomain AppleMetricUnits -bool false
+# sudo systemsetup -settimezone "America/Chicago" > /dev/null
+
 #########################
 #GIT
 #########################
@@ -9,30 +14,6 @@ git config --global user.name "$GIT_AUTHOR_NAME"
 GIT_AUTHOR_EMAIL="bwvoss@gmail.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
-
-#I use this as shorthand to review work before pushing
-function review() {
-  git add -A
-  git diff --staged
-}
-
-#Usage: release '0.0.1' will produce:
-#a commit of 'Version 0.0.1'
-#a tag of 'v0.0.1'
-#and it will git push and push the tags
-function release() {
-  git commit -m "Version $1" &&\
-  git tag "v$1" &&\
-  git push &&\
-  git push --tags
-}
-
-#NOTE: This will destroy the remote branch
-function remote_branch_rename() {
-  git branch -m $1 $2 &&\
-  git push origin :$1 &&\
-  git push origin $2
-}
 
 #########################
 #Functions
@@ -47,11 +28,6 @@ function reload() {
   source "~/.bash_profile"
 }
 
-function reload_extra() {
-  cp ~/Projects/OpenSource/extras/.extra ~/
-  reload
-}
-
 #########################
 #ALIASES
 #########################
@@ -59,8 +35,3 @@ function reload_extra() {
 #Budler shortcuts
 alias b="bundle"
 alias be="bundle exec"
-
-#Login to dev instance
-alias dev="ssh -A bvoss@dev-bvoss"
-#Login to prod instance
-alias prod="ssh -A bvoss@d1-site-utility-worker"
