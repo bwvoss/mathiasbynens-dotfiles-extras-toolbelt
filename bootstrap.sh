@@ -85,3 +85,6 @@ add_to_vimrc "map <leader>ip orequire 'pry';binding.pry<CR>"
 #Stop NERDTree from opening by default on: vim .
 add_to_vimrc "let g:NERDTreeHijackNetrw=0"
 
+#Do not use swap files
+add_to_vimrc "set noswapfile"
+
