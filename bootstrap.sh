@@ -29,6 +29,7 @@ add_vim_package "https://github.com/tpope/vim-fireplace" "vim-fireplace"
 add_vim_package "https://github.com/zhaocai/GoldenView.Vim" "GoldenView"
 add_vim_package "https://github.com/scrooloose/nerdcommenter" "nerdcommenter"
 add_vim_package "https://github.com/godlygeek/tabular" "tabular"
+add_vim_package "https://github.com/elixir-lang/vim-elixir" "vim-elixir"
 
 #Add pathogen to .vimrc
 add_to_vimrc "execute pathogen#infect()"
